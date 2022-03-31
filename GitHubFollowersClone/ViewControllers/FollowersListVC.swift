@@ -13,6 +13,15 @@ class FollowersListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        NetworkManager.shared.getFollowers(username, page: 1) { result in
+            
+            switch result{
+            case let .success(followers):
+                print(followers)
+            case let .failure(error):
+                self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue , buttonTitle: "OK")
+            }
+        }
     }
     
     

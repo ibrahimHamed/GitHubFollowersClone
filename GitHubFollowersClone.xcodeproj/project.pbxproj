@@ -16,10 +16,12 @@
 		0F3CA2C4277A3356001CEDC1 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3CA2C3277A3356001CEDC1 /* FavoritesVC.swift */; };
 		0F3CA2C8277A4CF4001CEDC1 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3CA2C7277A4CF4001CEDC1 /* GFButton.swift */; };
 		0F3CA2CB277A4E26001CEDC1 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3CA2CA277A4E26001CEDC1 /* GFTextField.swift */; };
+		0FA98AED27B86434000DFAE6 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA98AEC27B86434000DFAE6 /* ErrorMessage.swift */; };
 		0FAF47BB277A0A2B0053E3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF47BA277A0A2B0053E3D2 /* AppDelegate.swift */; };
 		0FAF47BD277A0A2B0053E3D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAF47BC277A0A2B0053E3D2 /* SceneDelegate.swift */; };
 		0FAF47C4277A0A2D0053E3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF47C3277A0A2D0053E3D2 /* Assets.xcassets */; };
 		0FAF47C7277A0A2D0053E3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAF47C5277A0A2D0053E3D2 /* LaunchScreen.storyboard */; };
+		0FC20CEC27B84BE70045A448 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC20CEB27B84BE70045A448 /* NetworkManager.swift */; };
 		0FF16B0927B23FFC006365AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF16B0827B23FFC006365AE /* User.swift */; };
 		0FF16B0B27B24158006365AE /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF16B0A27B24158006365AE /* Follower.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +36,14 @@
 		0F3CA2C3277A3356001CEDC1 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		0F3CA2C7277A4CF4001CEDC1 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		0F3CA2CA277A4E26001CEDC1 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		0FA98AEC27B86434000DFAE6 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		0FAF47B7277A0A2B0053E3D2 /* GitHubFollowersClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowersClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAF47BA277A0A2B0053E3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FAF47BC277A0A2B0053E3D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0FAF47C3277A0A2D0053E3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FAF47C6277A0A2D0053E3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FAF47C8277A0A2D0053E3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC20CEB27B84BE70045A448 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0FF16B0827B23FFC006365AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FF16B0A27B24158006365AE /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F24B68F27AEE9D40011EC18 /* Screens */ = {
+		0F24B68F27AEE9D40011EC18 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0F3CA2C0277A334B001CEDC1 /* SearchVC.swift */,
@@ -63,10 +67,10 @@
 				0F39C2A427968A4600BF4168 /* FollowersListVC.swift */,
 				0F24B68B27AEC0FB0011EC18 /* GFAlertVC.swift */,
 			);
-			path = Screens;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		0F24B69027AEE9E40011EC18 /* Custom Views */ = {
+		0F24B69027AEE9E40011EC18 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				0F3CA2C7277A4CF4001CEDC1 /* GFButton.swift */,
@@ -74,7 +78,7 @@
 				0F24B68727AEBE410011EC18 /* GFTitleLabel.swift */,
 				0F24B68927AEC0420011EC18 /* GFBodyLabel.swift */,
 			);
-			path = "Custom Views";
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		0F24B69127AEE9FE0011EC18 /* Extensions */ = {
@@ -96,6 +100,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		0FA98AEB27B86420000DFAE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0FA98AEC27B86434000DFAE6 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		0FAF47AE277A0A2B0053E3D2 = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +127,24 @@
 		0FAF47B9277A0A2B0053E3D2 /* GitHubFollowersClone */ = {
 			isa = PBXGroup;
 			children = (
+				0FA98AEB27B86420000DFAE6 /* Utilities */,
+				0FC20CEA27B84B030045A448 /* Managers */,
 				0F24B69127AEE9FE0011EC18 /* Extensions */,
 				0FF16B0727B23FE9006365AE /* Model */,
-				0F24B69027AEE9E40011EC18 /* Custom Views */,
-				0F24B68F27AEE9D40011EC18 /* Screens */,
+				0F24B69027AEE9E40011EC18 /* CustomViews */,
+				0F24B68F27AEE9D40011EC18 /* ViewControllers */,
 				0F24B69227AEEA2A0011EC18 /* Support */,
 				0FAF47C8277A0A2D0053E3D2 /* Info.plist */,
 			);
 			path = GitHubFollowersClone;
+			sourceTree = "<group>";
+		};
+		0FC20CEA27B84B030045A448 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0FC20CEB27B84BE70045A448 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		0FF16B0727B23FE9006365AE /* Model */ = {
@@ -210,9 +232,11 @@
 				0FAF47BB277A0A2B0053E3D2 /* AppDelegate.swift in Sources */,
 				0F24B68C27AEC0FB0011EC18 /* GFAlertVC.swift in Sources */,
 				0FAF47BD277A0A2B0053E3D2 /* SceneDelegate.swift in Sources */,
+				0FA98AED27B86434000DFAE6 /* ErrorMessage.swift in Sources */,
 				0FF16B0B27B24158006365AE /* Follower.swift in Sources */,
 				0F24B68827AEBE410011EC18 /* GFTitleLabel.swift in Sources */,
 				0FF16B0927B23FFC006365AE /* User.swift in Sources */,
+				0FC20CEC27B84BE70045A448 /* NetworkManager.swift in Sources */,
 				0F3CA2C4277A3356001CEDC1 /* FavoritesVC.swift in Sources */,
 				0F3CA2CB277A4E26001CEDC1 /* GFTextField.swift in Sources */,
 				0F24B68A27AEC0420011EC18 /* GFBodyLabel.swift in Sources */,
@@ -355,6 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPR4P6M9Z9;
 				INFOPLIST_FILE = GitHubFollowersClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,6 +398,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPR4P6M9Z9;
 				INFOPLIST_FILE = GitHubFollowersClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
