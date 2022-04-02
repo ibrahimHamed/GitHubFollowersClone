@@ -8,7 +8,7 @@
 import UIKit
 
 class FollowerCollectionViewCell: UICollectionViewCell {
-    
+    static let identifier = "FollowerCollectionViewCell"
     private let avatarImageView = GFAvatarImageView(frame: .zero)
     private let usernameLabel = GFTitleLabel(textAlignment: .center, fontSize: 16)
     private let padding : CGFloat = 8
