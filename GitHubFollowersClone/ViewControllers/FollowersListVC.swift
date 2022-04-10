@@ -56,6 +56,9 @@ class FollowersListVC: UIViewController {
             case let .success(followers):
                 if followers.count < 100 { self.haveMoreFollower = false }
                 self.followers.append(contentsOf: followers)
+                if self.followers.isEmpty {
+                    self.showEmptyStateView(message: "This user doesn't have any followers.Go Follow them 😄", in: self.view)
+                }
                 self.updateData()
             case let .failure(error):
                 self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue , buttonTitle: "OK")
@@ -91,7 +94,5 @@ extension FollowersListVC: UICollectionViewDelegate {
             page += 1
             getFollowers(username: username, page: page)
         }
-        
-        print(followers.count)
     }
 }

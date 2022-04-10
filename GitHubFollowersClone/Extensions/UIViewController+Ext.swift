@@ -7,7 +7,7 @@
 
 import UIKit
 
-fileprivate var containerView : UIView!
+private var containerView: UIView!
 
 extension UIViewController {
     func presentGFAlertOnMainThread(title: String, message: String, buttonTitle: String) {
@@ -43,6 +43,14 @@ extension UIViewController {
         DispatchQueue.main.async {
             containerView.removeFromSuperview()
             containerView = nil
+        }
+    }
+    
+    func showEmptyStateView(message : String , in view : UIView) {
+        DispatchQueue.main.async {
+            let emptyView = GFEmptyStateView(message: message)
+            emptyView.frame = view.frame
+            view.addSubview(emptyView)
         }
 
     }
